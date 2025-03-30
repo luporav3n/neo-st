@@ -1,57 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Neo Raven</title>
-  <link rel="manifest" href="manifest.json">
-  <script src="main.js" defer></script>
-  <script src="volumes.js" defer></script>
-  <script src="scriptpad.js" defer></script>
-  <script src="talkpad.js" defer></script>
-  <script src="settings.js" defer></script>
-  <style>
-    body { margin: 0; background: #111; color: #fff; font-family: monospace; }
-    header { background: #222; padding: 1em; text-align: center; }
-    nav { display: flex; position: fixed; bottom: 0; width: 100%; background: #000; }
-    nav button {
-      flex: 1; padding: 1em; background: #111; color: #ccc;
-      border: none; font-size: 1em;
-    }
-    .tab { display: none; padding: 1em; min-height: 80vh; }
-    .active { display: block; }
-    .scriptBlock { background: #222; margin: 0.5em 0; padding: 0.5em; border-left: 4px solid #555; }
-    .scriptTitle { font-weight: bold; }
-    .tag { color: #7cf; margin-right: 0.5em; }
-  </style>
+<title>Neo Raven v1.3</title>
 </head>
 <body>
-  <header>Neo Raven | Lupo Protocol</header>
-
-  <div class="tab active" id="volumes"><h3>Vol群</h3><div id="volList"></div></div>
-  <div class="tab" id="scriptpad">
-    <h3>ScriptPad</h3>
-    <input type="text" id="scriptTitle" placeholder="タイトル"><br><br>
-    <textarea id="scriptText" rows="4" cols="40" placeholder="本文"></textarea><br><br>
-    <input type="text" id="scriptTags" placeholder="#怒 #誇り"><br><br>
-    <button onclick="saveScript()">保存</button>
-    <div id="tagList"></div>
-    <div id="scriptList"></div>
-  </div>
-  <div class="tab" id="talkpad">
-    <h3>対話モード</h3>
-    <select id="talkPerson">
-      <option>武田 毅</option>
-      <option>妹</option>
-    </select><br><br>
-    <input type="text" id="talkInput" placeholder="話しかける言葉" size="40">
-    <button onclick="talkTo(document.getElementById('talkPerson').value)">話す</button>
-    <div id="talkLog"></div>
-  </div>
-
-  <nav>
-    <button onclick="switchTab('volumes')">Vol</button>
-    <button onclick="switchTab('scriptpad')">Script</button>
-    <button onclick="switchTab('talkpad')">Talk</button>
-  </nav>
+<h1>Welcome to Neo Raven v1.3</h1>
 </body>
 </html>
